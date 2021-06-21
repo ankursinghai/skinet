@@ -1,4 +1,5 @@
-﻿using API.Dtos;
+﻿using System.Threading;
+using API.Dtos;
 using API.Errors;
 using API.Helpers;
 using AutoMapper;
@@ -46,7 +47,7 @@ namespace API.Controllers
             var products = await _productsRepo.ListAsync(specs);
             var data = _mapper
                 .Map<IReadOnlyList<Product>, IReadOnlyList<ProductToReturnDto>>(products);
-
+            //Thread.Sleep(2000);
             return Ok(new Pagination<ProductToReturnDto>(productParams.PageIndex, productParams.PageSize, totalItems, data));
         }
 
