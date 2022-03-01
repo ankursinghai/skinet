@@ -57,8 +57,8 @@ namespace Infrastructure.Data.Migrations
                     b.Property<string>("Name")
                         .HasColumnType("TEXT");
 
-                    b.Property<DateTimeOffset>("OrderDate")
-                        .HasColumnType("TEXT");
+                    b.Property<long>("OrderDate")
+                        .HasColumnType("INTEGER");
 
                     b.Property<string>("PaymentIntentId")
                         .HasColumnType("TEXT");
@@ -188,10 +188,13 @@ namespace Infrastructure.Data.Migrations
                             b1.Property<string>("LastName")
                                 .HasColumnType("TEXT");
 
+                            b1.Property<string>("State")
+                                .HasColumnType("TEXT");
+
                             b1.Property<string>("Street")
                                 .HasColumnType("TEXT");
 
-                            b1.Property<string>("ZipCode")
+                            b1.Property<string>("Zipcode")
                                 .HasColumnType("TEXT");
 
                             b1.HasKey("OrderId");

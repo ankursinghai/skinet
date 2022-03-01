@@ -21,6 +21,7 @@ namespace Core.Entities.Identity
                         LastName = "Bobbity",
                         Street = "10 The Street",
                         City = "New York",
+                        State = "Washington",
                         ZipCode = "90210"
                     }
                 };
