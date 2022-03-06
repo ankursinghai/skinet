@@ -22,7 +22,7 @@ namespace Core.Entities.Identity
                         Street = "10 The Street",
                         City = "New York",
                         State = "Washington",
-                        ZipCode = "90210"
+                        Zipcode = "90210"
                     }
                 };
 
